@@ -174,6 +174,7 @@ class Squeakquel extends Datastore {
             if (fieldName === 'id') {
                 output.primaryKey = true;
                 output.autoIncrement = true;
+                output.initialAutoIncrement = "1";
                 output.type = Sequelize.INTEGER.UNSIGNED;
             }
 
